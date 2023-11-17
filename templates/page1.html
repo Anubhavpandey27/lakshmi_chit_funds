@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>laxmichitfund - online Demat, Trading </title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='Style/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='Style/hoverEffect.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='Style/LoginAndRegisterStyle.css') }}">
+</head>
+<body id="IndexBody">
+    <div class="Groww_Top">
+        <div class="Groww_logo">
+            <img src="{{ url_for('static', filename='Images/laxmichitfund1.png') }}" width="150px" height="150px" >
+        </div>
+
+        <div class="Groww_searchContainer">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="What are you looking for today?">
+        </div>
+
+        <div class="Groww_LoginRegister">
+            <Button>Login/Register</Button>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+        <div id="darkModeToggle" class="light" onclick="toggleDarkMode()"></div>
+
+        <script>
+          let isDarkMode = false;
+      
+          function toggleDarkMode() {
+            const darkmode = new Darkmode();
+            isDarkMode = !isDarkMode;
+            if (isDarkMode) {
+              darkmode.enable();
+            } else {
+              darkmode.disable();
+            }
+      
+            const toggleButton = document.getElementById('darkModeToggle');
+            toggleButton.classList.toggle('dark', isDarkMode);
+            toggleButton.classList.toggle('light', !isDarkMode);
+          }
+        </script>
+    </div>
+
+    <!--Middle part-->
+    <div class="middle_part">
+        <div class="Grow_Middle_Left">
+            <h2 class="InvestIn">
+                Invest in 
+                <div class="Slidder_vertical">
+                    <span class="Stocks_Color">Stocks</span>
+                    <span class="MutualFunds_Color">Mutual Funds</span>
+                    <span class="FuturesOptions_Color">Futures & Options</span>
+                    <span class="UsStocks_Color">US Stocks</span>
+                    <span class="IPO_Color">IPO</span>
+                    <span class="FDs_Color">FDs</span>
+                    
+                </div>
+            </h2>
+
+            <div class="Grow_Middle_Left_Text">
+                Trusted by <span style="font-weight:bold">Millions</span> of Indians. Start investing today.
+            </div>
+            <div class="Grow_Middle_Right">
+
+                <div class="Grow_middle_col2">
+                    <a class="mutualFunds" href="#">
+                        <img src="{{ url_for('static', filename='Images/ImageIcon/MutualFunds.svg') }}" width="49px" height="49px">
+                        <h3>Apple</h3>
+                        <h3>189.71</h3>
+                    </a>
+        
+                  
+                </div>
+                <div class="Grow_middle_col2">
+                    <a class="FuturesOptions" href="#">
+                        <img src="{{ url_for('static', filename='Images/ImageIcon/Futuresoptions.svg') }}" width="49px" height="49px">
+                        <h3>Microsoft</h3>
+                        <h3>376.17</h3>
+                    </a>
+                    <div class="Grow_middle_col2">
+                        <a class="FuturesOptions" href="#">
+                            <img src="{{ url_for('static', filename='Images/ImageIcon/Futuresoptions.svg') }}" width="49px" height="49px">
+                            <h3>META</h3>
+                            <h3>334.19</h3>
+                        </a>
+        
+                    <a class="usStocks"  href="#">
+                        <img src="{{ url_for('static', filename='Images/ImageIcon/UsStocks.svg') }}" width="49px" height="49px">
+                        <h3>Google</h3>
+                        <h3>136.93</h3>
+                    </a>
+                </div>
+
+               
+        </div>
+       
